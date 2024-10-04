@@ -31,7 +31,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('posts/', include(r_post.urls)),
     path('posts/<int:post_id>/comments/', include(r_comments.urls)),
-    path('posts/<int:post_id>/likes/', LikeView.as_view())
+    path('posts/<int:post_id>/likes/', LikeView.as_view()),
 ]
 
 if settings.DEBUG:
